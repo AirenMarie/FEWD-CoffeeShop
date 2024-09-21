@@ -1,9 +1,4 @@
 * {
-  width: 100%;
-}
-
-html,
-body {
   margin: 0;
   padding: 0;
 }
@@ -76,20 +71,17 @@ label,
   font-weight: 400;
 }
 
-main {
-  width: 100vw;
-}
-
-.page-section {
-  width: 100%;
-}
-
 #welcome {
   background: url("assets/photos/coffee-beans-bg.jpg");
   background-size: cover;
   color: #fff7f2;
   text-align: center;
   padding: 15px 75px 75px 75px;
+}
+
+#welcome-block {
+  width: 1000px;
+  margin: 0 auto;
 }
 
 #welcome-heading {
@@ -99,6 +91,7 @@ main {
 
 #welcome p {
   font-size: 1.3rem;
+  width: 1000px;
 }
 
 button {
@@ -131,7 +124,7 @@ button {
 }
 
 #about-coffee {
-  background-image: url(assets/photos/table-latte.jpg);
+  background-image: url("assets/photos/table-latte.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
@@ -145,11 +138,12 @@ button {
   text-align: center;
   float: left;
   padding: 20px 20px 20px 30px;
-  margin: 20px 0 75px 75px;
+  margin: 50px 0 50px 75px;
 }
 
 #about-heading {
   font-size: 2rem;
+  margin: 15px 15px 20px 15px;
 }
 
 #about-block p {
@@ -157,12 +151,17 @@ button {
 }
 
 #location {
-  background-image: url(assets/photos/wood-accent.jpg);
+  background-image: url("assets/photos/wood-accent.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+iframe {
+  margin: 75px;
 }
 
 #location-info {
@@ -172,14 +171,20 @@ button {
   text-align: center;
   float: right;
   padding: 20px 30px 20px 20px;
-  margin: 15px 15px 0 20px;
+  margin: 75px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+}
+
+#location-info h2 {
+  width: 400px;
+  margin: 15px 15px 0 15px;
 }
 
 #hours li {
   font-size: 1.1rem;
-  text-align: left;
+  text-align: center;
 }
 
 #menu {
@@ -298,10 +303,10 @@ input {
 
 #contacts {
   display: grid;
-  grid-template-columns: 500px 500px;
-  grid-template-rows: 300px;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 200px;
   gap: 200px;
-  margin: 0 75px;
+  justify-content: center;
 }
 
 #address {
@@ -326,12 +331,13 @@ input {
   height: 35px;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-evenly;
   align-items: center;
 }
 .social-icon {
   font-size: 2rem;
   text-align: center;
-  min-width: 60px;
+  min-width: 30px;
   height: 30px;
   margin: 20px;
   display: block;
@@ -340,5 +346,14 @@ input {
 footer {
   background-color: #4f2b1c;
   color: #fff7f2;
-  height: 150px;
+}
+
+.legal {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.legal-item {
+  margin: 35px 0;
+  font-size: 1.1rem;
 }
